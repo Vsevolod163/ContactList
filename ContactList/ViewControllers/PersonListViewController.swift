@@ -7,42 +7,39 @@
 
 import UIKit
 
-class PersonListViewController: UITableViewController {
+final class PersonListViewController: UITableViewController {
+    
+    let personList = Person.getPerson()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(personList)
     }
     
     // MARK: - Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
 }
 
 
-// MARK: - Table view data source
+// MARK: - UITableViewDataSource
 extension PersonListViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        personList.count
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-}
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "person", for: indexPath)
+        var content = cell.defaultContentConfiguration()
+        let person = personList[indexPath.row]
+        content.text = person.fullName
+        cell.contentConfiguration = content
+            
         return cell
     }
-    */
+}
+
 
     /*
     // Override to support conditional editing of the table view.

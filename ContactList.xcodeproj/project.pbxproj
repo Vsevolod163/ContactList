@@ -16,6 +16,7 @@
 		C68A0FE929EED85700D79922 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A0FE829EED85700D79922 /* DataStore.swift */; };
 		C68A0FEB29EEE3F200D79922 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A0FEA29EEE3F200D79922 /* PersonListViewController.swift */; };
 		C68A0FED29EEE43600D79922 /* PersonListDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A0FEC29EEE43600D79922 /* PersonListDetailsViewController.swift */; };
+		C68A0FEF29EEEA3F00D79922 /* PersonInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68A0FEE29EEEA3F00D79922 /* PersonInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C68A0FE829EED85700D79922 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		C68A0FEA29EEE3F200D79922 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
 		C68A0FEC29EEE43600D79922 /* PersonListDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListDetailsViewController.swift; sourceTree = "<group>"; };
+		C68A0FEE29EEEA3F00D79922 /* PersonInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				C68A0FEA29EEE3F200D79922 /* PersonListViewController.swift */,
 				C68A0FEC29EEE43600D79922 /* PersonListDetailsViewController.swift */,
+				C68A0FEE29EEEA3F00D79922 /* PersonInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				C68A0FEB29EEE3F200D79922 /* PersonListViewController.swift in Sources */,
 				C68A0FE629EED77B00D79922 /* Person.swift in Sources */,
 				C68A0FE929EED85700D79922 /* DataStore.swift in Sources */,
+				C68A0FEF29EEEA3F00D79922 /* PersonInfoViewController.swift in Sources */,
 				C68A0FD029EED35D00D79922 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

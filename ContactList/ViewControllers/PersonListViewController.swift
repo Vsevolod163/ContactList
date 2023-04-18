@@ -9,7 +9,7 @@ import UIKit
 
 final class PersonListViewController: UITableViewController {
     
-    let personList = Person.getPerson()
+    let personList = Person.getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()

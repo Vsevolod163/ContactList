@@ -10,11 +10,6 @@ import UIKit
 final class PersonListDetailsViewController: UITableViewController {
     
     let personList = Person.getPersons()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
 }
 
 // MARK: - TableViewDataSource

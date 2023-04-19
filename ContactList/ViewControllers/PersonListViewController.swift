@@ -11,11 +11,6 @@ final class PersonListViewController: UITableViewController {
     
     let personList = Person.getPersons()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print(personList)
-    }
-    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }

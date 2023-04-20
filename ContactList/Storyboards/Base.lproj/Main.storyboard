@@ -87,6 +87,7 @@
         <!--Contacts-->
         <scene sceneID="Xpe-27-DHT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f40-79-VW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="SM1-ct-EpA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle.fill" catalog="system" id="gXk-i9-3fL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="DTI-d7-KsV">
@@ -97,7 +98,6 @@
                         <segue destination="fOt-vd-M0E" kind="relationship" relationship="rootViewController" id="g7Y-qa-d6n"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f40-79-VW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-384" y="649"/>
         </scene>
@@ -133,6 +133,7 @@
         <!--Contacts-->
         <scene sceneID="bIj-ds-4YV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2R-AY-OPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="TCi-ho-xh3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle.fill" catalog="system" id="hpj-ae-gNh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Zcx-Y3-4vg">
@@ -143,7 +144,6 @@
                         <segue destination="xGl-yr-LUq" kind="relationship" relationship="rootViewController" id="hZK-yL-azE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U2R-AY-OPg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="473" y="649"/>
         </scene>

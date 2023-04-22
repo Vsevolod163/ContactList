@@ -19,7 +19,7 @@ struct Person {
     
     static func getPersons() -> [Person] {
         
-        var result: [Person] = []
+        var persons: [Person] = []
         
         let names = DataStore.shared.names.shuffled()
         let surnames = DataStore.shared.names.shuffled()
@@ -34,12 +34,14 @@ struct Person {
         )
         
         for index in 0..<iterationCount {
-            let result = Person(
+            let person = Person(
                 name: names[index],
                 surname: surnames[index],
                 phone: phones[index],
                 email: emails[index]
             )
+            
+            persons.append(person)
         }
         
         return result

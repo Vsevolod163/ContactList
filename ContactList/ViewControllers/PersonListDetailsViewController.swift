@@ -27,12 +27,11 @@ final class PersonListDetailsViewController: UITableViewController {
         )
         var content = cell.defaultContentConfiguration()
         let person = personList[indexPath.section]
+        content.text = person.rows[indexPath.row]
         
-        if indexPath.row == 0 {
-            content.text = person.phone
-        } else {
-            content.text = person.email
-        }
+        content.image = indexPath.row == 0
+            ? UIImage(systemName: Contacts.phone.rawValue)
+            : UIImage(systemName: Contacts.email.rawValue)
         
         cell.contentConfiguration = content
         

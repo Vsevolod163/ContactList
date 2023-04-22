@@ -34,7 +34,7 @@
                             <outlet property="delegate" destination="fOt-vd-M0E" id="yli-JB-SSy"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Stg-pL-pEu"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle" catalog="system" id="Stg-pL-pEu"/>
                     <navigationItem key="navigationItem" title="Persons List" id="393-6v-QwU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXn-it-1fP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -108,7 +108,7 @@
                             <outlet property="delegate" destination="xGl-yr-LUq" id="qSp-Lb-tyq"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="B04-eE-xMy"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.crop.circle" catalog="system" id="B04-eE-xMy"/>
                     <navigationItem key="navigationItem" title="Persons List" id="mAa-vz-Gdb"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBs-CJ-rI4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -153,6 +153,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

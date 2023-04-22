@@ -18,7 +18,7 @@ final class DataStore {
         "Ben",
         "Robert"
     ]
-    var surnames = [
+    let surnames = [
         "Black",
         "Jankin",
         "Smith",
@@ -30,7 +30,7 @@ final class DataStore {
         "White",
         "Forest"
     ]
-    var phones = [
+    let phones = [
         "3252315",
         "8384411",
         "94399251",
@@ -42,7 +42,7 @@ final class DataStore {
         "125325235",
         "9436231"
     ]
-    var emails = [
+    let emails = [
         "hello@gmail.com",
         "welcome@icloud.com",
         "volleyball@gmail.com",
@@ -56,3 +56,18 @@ final class DataStore {
     ]
 }
 
+final class PersonManager {
+    private let dataStore = DataStore()
+    
+    func add(name: String) {
+        if !dataStore.names.contains(name) {
+            dataStore.names.append(name)
+        }
+    }
+    
+    func getNames() {
+        dataStore.names.forEach { name in
+            print(name)
+        }
+    }
+}

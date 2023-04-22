@@ -9,7 +9,7 @@ final class DataStore {
     
     static let shared = DataStore()
     
-    var names = [
+    let names = [
         "John",
         "Alex",
         "Susan",
@@ -21,7 +21,7 @@ final class DataStore {
         "Ben",
         "Robert"
     ]
-    var surnames = [
+    let surnames = [
         "Black",
         "Jankin",
         "Smith",
@@ -33,7 +33,7 @@ final class DataStore {
         "White",
         "Forest"
     ]
-    var phones = [
+    let phones = [
         "3252315",
         "8384411",
         "94399251",
@@ -45,7 +45,7 @@ final class DataStore {
         "125325235",
         "9436231"
     ]
-    var emails = [
+    let emails = [
         "hello@gmail.com",
         "welcome@icloud.com",
         "volleyball@gmail.com",

@@ -18,28 +18,28 @@ struct Person {
     }
     
     static func getPersons() -> [Person] {
-        let dataStore = DataStore()
+        
         var result: [Person] = []
         
-        for _ in dataStore.names {
-            let randomName = dataStore.names.randomElement() ?? ""
-            let randomSurname = dataStore.surnames.randomElement() ?? ""
-            let randomPhone = dataStore.phones.randomElement() ?? ""
-            let randomEmail = dataStore.emails.randomElement() ?? ""
+        let names = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.names.shuffled()
+        let emails = DataStore.shared.names.shuffled()
+        let phones = DataStore.shared.names.shuffled()
             
-            result.append(
-                Person(
-                    name: randomName,
-                    surname: randomSurname,
-                    phone: randomPhone,
-                    email: randomEmail
-                )
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            emails.count,
+            phones.count
+        )
+        
+        for index in 0..<iterationCount {
+            let result = Person(
+                name: names[index],
+                surname: surnames[index],
+                phone: phones[index],
+                email: emails[index]
             )
-            
-            dataStore.names.removeAll(where: { $0 == randomName })
-            dataStore.surnames.removeAll(where: { $0 == randomSurname })
-            dataStore.phones.removeAll(where: { $0 == randomPhone })
-            dataStore.emails.removeAll(where: { $0 == randomEmail })
         }
         
         return result

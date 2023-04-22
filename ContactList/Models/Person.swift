@@ -22,9 +22,9 @@ struct Person {
         var persons: [Person] = []
         
         let names = DataStore.shared.names.shuffled()
-        let surnames = DataStore.shared.names.shuffled()
-        let emails = DataStore.shared.names.shuffled()
-        let phones = DataStore.shared.names.shuffled()
+        let surnames = DataStore.shared.surnames.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        let phones = DataStore.shared.phones.shuffled()
             
         let iterationCount = min(
             names.count,
@@ -44,6 +44,11 @@ struct Person {
             persons.append(person)
         }
         
-        return result
+        return persons
     }
+}
+
+enum Contacts: String {
+    case phone = "phone"
+    case email = "tray"
 }

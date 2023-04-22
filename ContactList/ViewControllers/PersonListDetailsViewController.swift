@@ -9,7 +9,7 @@ import UIKit
 
 final class PersonListDetailsViewController: UITableViewController {
     
-    let personList = Person.getPersons()
+    var personList: [Person]!
 }
 
 // MARK: - TableViewDataSource

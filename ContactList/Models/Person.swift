@@ -18,7 +18,7 @@ struct Person {
     }
     
     static func getPersons() -> [Person] {
-        let dataStore = DataStore.init()
+        let dataStore = DataStore()
         var result: [Person] = []
         
         for _ in dataStore.names {

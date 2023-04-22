@@ -64,6 +64,7 @@
 		C68A0FCC29EED35D00D79922 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				C6B8C6D129F402EB00100A26 /* Services */,
 				C68A0FE429EED3ED00D79922 /* Models */,
 				C68A0FE329EED39900D79922 /* ViewControllers */,
 				C68A0FE229EED38F00D79922 /* Storyboards */,
@@ -106,9 +107,16 @@
 			isa = PBXGroup;
 			children = (
 				C68A0FE529EED77B00D79922 /* Person.swift */,
-				C68A0FE829EED85700D79922 /* DataStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C6B8C6D129F402EB00100A26 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C68A0FE829EED85700D79922 /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

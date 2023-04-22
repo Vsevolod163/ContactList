@@ -6,7 +6,7 @@
 //
 
 final class DataStore {
-    var names: [String] = [
+    var names = [
         "John",
         "Alex",
         "Susan",
@@ -18,7 +18,7 @@ final class DataStore {
         "Ben",
         "Robert"
     ]
-    var surnames: [String] = [
+    var surnames = [
         "Black",
         "Jankin",
         "Smith",
@@ -30,7 +30,7 @@ final class DataStore {
         "White",
         "Forest"
     ]
-    var phones: [String] = [
+    var phones = [
         "3252315",
         "8384411",
         "94399251",
@@ -42,7 +42,7 @@ final class DataStore {
         "125325235",
         "9436231"
     ]
-    var emails: [String] = [
+    var emails = [
         "hello@gmail.com",
         "welcome@icloud.com",
         "volleyball@gmail.com",

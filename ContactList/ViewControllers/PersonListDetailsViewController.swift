@@ -50,6 +50,17 @@ extension PersonListDetailsViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        UIView.animate(withDuration: 0.5) {
+            view.transform = CGAffineTransform.identity
+        }
+    }
+    
+//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        70
+//    }
+    
     // Cоздание кастомной header view
 //    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 //        let contentView = UIView()

@@ -19,7 +19,6 @@ final class PersonListViewController: UITableViewController {
     }
 }
 
-
 // MARK: - UITableViewDataSource
 extension PersonListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

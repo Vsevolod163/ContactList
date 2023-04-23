@@ -57,9 +57,9 @@ extension PersonListDetailsViewController {
         }
     }
     
-//    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        70
-//    }
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        70
+    }
     
     // Cоздание кастомной header view
 //    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -41,26 +41,35 @@ final class PersonListDetailsViewController: UITableViewController {
 
 // MARK: - UITableViewDelegate
 extension PersonListDetailsViewController {
-    // Cоздание кастомной header view
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let contentView = UIView()
-        contentView.backgroundColor = .gray
+        let cell = tableView.dequeueReusableCell(withIdentifier: "headerInfo") as? HeaderTableViewCell
+        let person = personList[section]
+        cell?.nameLabel.text = person.name
+        cell?.surnameLabel.text = person.surname
         
-        let fullNameLabel = UILabel(
-            frame: CGRect(
-                x: 16,
-                y: 3,
-                width: tableView.frame.width,
-                height: 20
-            )
-        )
-        fullNameLabel.text = personList[section].fullName
-        fullNameLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        fullNameLabel.textColor = .white
-        contentView.addSubview(fullNameLabel)
-        
-        return contentView
+        return cell
     }
+    
+    // Cоздание кастомной header view
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let contentView = UIView()
+//        contentView.backgroundColor = .gray
+//
+//        let fullNameLabel = UILabel(
+//            frame: CGRect(
+//                x: 16,
+//                y: 3,
+//                width: tableView.frame.width,
+//                height: 20
+//            )
+//        )
+//        fullNameLabel.text = personList[section].fullName
+//        fullNameLabel.font = UIFont.boldSystemFont(ofSize: 17)
+//        fullNameLabel.textColor = .white
+//        contentView.addSubview(fullNameLabel)
+//
+//        return contentView
+//    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
